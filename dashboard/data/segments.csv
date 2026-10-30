@@ -1,0 +1,4 @@
+segment;players;sessions_per_week;avg_session_minutes;player_level;payer_share;high_engagement_share;share_of_players;suggested_action
+Highly active non-payers;15805;14,5244;94,7475;49,6413;0,0;0,468;0,3948;Convert: entry-level offer
+Low-activity non-payers;16188;4,5094;94,9844;49,4847;0,0;0,0498;0,4044;Re-engage: reminders and events
+Payers;8041;9,5308;94,4932;50,0276;1,0;0,2654;0,2009;Retain: loyalty perks
