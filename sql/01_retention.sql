@@ -2,7 +2,8 @@
 -- Module A - Player retention and engagement KPIs
 -- Engine: DuckDB | Table: cookie_cats (90,189 players, one row per player)
 -- Columns: userid, version (gate_30 / gate_40), sum_gamerounds (rounds
---          played during the first week), retention_1, retention_7 (booleans)
+--          played during the first 14 days after install), retention_1,
+--          retention_7 (booleans)
 -- =====================================================================
 
 
@@ -33,6 +34,8 @@ ORDER BY version;
 -- CASE WHEN builds engagement bands. Players with 0 rounds installed
 -- the game but never played. Retention rises sharply with engagement,
 -- but this is a correlation: playing a lot is partly a consequence of staying.
+-- Rounds are counted over the first 14 days, so a player who comes back on
+-- day 7 has more days left to play: part of the link is mechanical.
 SELECT
   CASE
     WHEN sum_gamerounds = 0   THEN '0 rounds'
