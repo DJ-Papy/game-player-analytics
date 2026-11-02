@@ -4,3 +4,7 @@ __pycache__/
 *.duckdb
 *.duckdb.wal
 data/raw/cookie_cats.csv
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
